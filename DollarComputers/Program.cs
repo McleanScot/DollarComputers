@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace DollarComputers
 {
-    static class Program
+    public static class Program
     {
+        public static product product;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace DollarComputers
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+            Application.Run(new SplashForm());
         }
     }
 }

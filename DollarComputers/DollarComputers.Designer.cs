@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.OrderLabel = new System.Windows.Forms.Label();
-            this.FinalPictureBox = new System.Windows.Forms.PictureBox();
             this.NewOrderButton = new System.Windows.Forms.Button();
             this.SavedOrderButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.FinalPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.FinalPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,14 +45,6 @@
             this.OrderLabel.TabIndex = 0;
             this.OrderLabel.Text = "Order Your Computer Today!";
             // 
-            // FinalPictureBox
-            // 
-            this.FinalPictureBox.Location = new System.Drawing.Point(72, 25);
-            this.FinalPictureBox.Name = "FinalPictureBox";
-            this.FinalPictureBox.Size = new System.Drawing.Size(123, 119);
-            this.FinalPictureBox.TabIndex = 1;
-            this.FinalPictureBox.TabStop = false;
-            // 
             // NewOrderButton
             // 
             this.NewOrderButton.Location = new System.Drawing.Point(76, 150);
@@ -61,6 +53,7 @@
             this.NewOrderButton.TabIndex = 2;
             this.NewOrderButton.Text = "Start a New Order";
             this.NewOrderButton.UseVisualStyleBackColor = true;
+            this.NewOrderButton.Click += new System.EventHandler(this.NewOrderButton_Click);
             // 
             // SavedOrderButton
             // 
@@ -79,18 +72,31 @@
             this.ExitButton.TabIndex = 4;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // FinalPictureBox
+            // 
+            this.FinalPictureBox.Image = global::DollarComputers.Properties.Resources._1080;
+            this.FinalPictureBox.Location = new System.Drawing.Point(44, 25);
+            this.FinalPictureBox.Name = "FinalPictureBox";
+            this.FinalPictureBox.Size = new System.Drawing.Size(182, 119);
+            this.FinalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FinalPictureBox.TabIndex = 1;
+            this.FinalPictureBox.TabStop = false;
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 248);
+            this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.SavedOrderButton);
             this.Controls.Add(this.NewOrderButton);
             this.Controls.Add(this.FinalPictureBox);
             this.Controls.Add(this.OrderLabel);
             this.Name = "StartForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome To Dollar Computer!";
             ((System.ComponentModel.ISupportInitialize)(this.FinalPictureBox)).EndInit();
             this.ResumeLayout(false);

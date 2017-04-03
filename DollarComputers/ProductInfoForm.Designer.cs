@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductInfoForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,6 +111,7 @@
             // 
             this.ProductIdTextBox.Location = new System.Drawing.Point(119, 56);
             this.ProductIdTextBox.Name = "ProductIdTextBox";
+            this.ProductIdTextBox.ReadOnly = true;
             this.ProductIdTextBox.Size = new System.Drawing.Size(100, 20);
             this.ProductIdTextBox.TabIndex = 2;
             // 
@@ -117,6 +119,7 @@
             // 
             this.ConditionTextBox.Location = new System.Drawing.Point(346, 56);
             this.ConditionTextBox.Name = "ConditionTextBox";
+            this.ConditionTextBox.ReadOnly = true;
             this.ConditionTextBox.Size = new System.Drawing.Size(100, 20);
             this.ConditionTextBox.TabIndex = 4;
             // 
@@ -133,6 +136,7 @@
             // 
             this.CostTextBox.Location = new System.Drawing.Point(557, 56);
             this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(100, 20);
             this.CostTextBox.TabIndex = 6;
             // 
@@ -166,6 +170,7 @@
             // 
             this.ModelTextBox.Location = new System.Drawing.Point(389, 54);
             this.ModelTextBox.Name = "ModelTextBox";
+            this.ModelTextBox.ReadOnly = true;
             this.ModelTextBox.Size = new System.Drawing.Size(395, 20);
             this.ModelTextBox.TabIndex = 10;
             // 
@@ -173,6 +178,7 @@
             // 
             this.OsTextBox.Location = new System.Drawing.Point(389, 27);
             this.OsTextBox.Name = "OsTextBox";
+            this.OsTextBox.ReadOnly = true;
             this.OsTextBox.Size = new System.Drawing.Size(395, 20);
             this.OsTextBox.TabIndex = 11;
             // 
@@ -198,6 +204,7 @@
             // 
             this.ManufacturerTextBox.Location = new System.Drawing.Point(82, 56);
             this.ManufacturerTextBox.Name = "ManufacturerTextBox";
+            this.ManufacturerTextBox.ReadOnly = true;
             this.ManufacturerTextBox.Size = new System.Drawing.Size(100, 20);
             this.ManufacturerTextBox.TabIndex = 8;
             // 
@@ -205,6 +212,7 @@
             // 
             this.PlatformTextBox.Location = new System.Drawing.Point(82, 29);
             this.PlatformTextBox.Name = "PlatformTextBox";
+            this.PlatformTextBox.ReadOnly = true;
             this.PlatformTextBox.Size = new System.Drawing.Size(100, 20);
             this.PlatformTextBox.TabIndex = 8;
             // 
@@ -257,6 +265,7 @@
             // 
             this.WebCamTextBox.Location = new System.Drawing.Point(492, 82);
             this.WebCamTextBox.Name = "WebCamTextBox";
+            this.WebCamTextBox.ReadOnly = true;
             this.WebCamTextBox.Size = new System.Drawing.Size(292, 20);
             this.WebCamTextBox.TabIndex = 22;
             // 
@@ -273,6 +282,7 @@
             // 
             this.GpuTypeTextBox.Location = new System.Drawing.Point(492, 56);
             this.GpuTypeTextBox.Name = "GpuTypeTextBox";
+            this.GpuTypeTextBox.ReadOnly = true;
             this.GpuTypeTextBox.Size = new System.Drawing.Size(292, 20);
             this.GpuTypeTextBox.TabIndex = 18;
             // 
@@ -280,6 +290,7 @@
             // 
             this.HddTextBox.Location = new System.Drawing.Point(492, 31);
             this.HddTextBox.Name = "HddTextBox";
+            this.HddTextBox.ReadOnly = true;
             this.HddTextBox.Size = new System.Drawing.Size(292, 20);
             this.HddTextBox.TabIndex = 19;
             // 
@@ -305,6 +316,7 @@
             // 
             this.CpuSpeedTextBox.Location = new System.Drawing.Point(277, 82);
             this.CpuSpeedTextBox.Name = "CpuSpeedTextBox";
+            this.CpuSpeedTextBox.ReadOnly = true;
             this.CpuSpeedTextBox.Size = new System.Drawing.Size(122, 20);
             this.CpuSpeedTextBox.TabIndex = 16;
             // 
@@ -321,6 +333,7 @@
             // 
             this.CpuTypeTextBox.Location = new System.Drawing.Point(82, 82);
             this.CpuTypeTextBox.Name = "CpuTypeTextBox";
+            this.CpuTypeTextBox.ReadOnly = true;
             this.CpuTypeTextBox.Size = new System.Drawing.Size(100, 20);
             this.CpuTypeTextBox.TabIndex = 14;
             // 
@@ -337,6 +350,7 @@
             // 
             this.CpuNumberTextBox.Location = new System.Drawing.Point(277, 56);
             this.CpuNumberTextBox.Name = "CpuNumberTextBox";
+            this.CpuNumberTextBox.ReadOnly = true;
             this.CpuNumberTextBox.Size = new System.Drawing.Size(122, 20);
             this.CpuNumberTextBox.TabIndex = 10;
             // 
@@ -344,6 +358,7 @@
             // 
             this.LcdSizeTextBox.Location = new System.Drawing.Point(277, 31);
             this.LcdSizeTextBox.Name = "LcdSizeTextBox";
+            this.LcdSizeTextBox.ReadOnly = true;
             this.LcdSizeTextBox.Size = new System.Drawing.Size(122, 20);
             this.LcdSizeTextBox.TabIndex = 11;
             // 
@@ -369,6 +384,7 @@
             // 
             this.CpuBrandTextBox.Location = new System.Drawing.Point(82, 56);
             this.CpuBrandTextBox.Name = "CpuBrandTextBox";
+            this.CpuBrandTextBox.ReadOnly = true;
             this.CpuBrandTextBox.Size = new System.Drawing.Size(100, 20);
             this.CpuBrandTextBox.TabIndex = 8;
             // 
@@ -376,6 +392,7 @@
             // 
             this.MemoryTextBox.Location = new System.Drawing.Point(82, 29);
             this.MemoryTextBox.Name = "MemoryTextBox";
+            this.MemoryTextBox.ReadOnly = true;
             this.MemoryTextBox.Size = new System.Drawing.Size(100, 20);
             this.MemoryTextBox.TabIndex = 8;
             // 
@@ -414,6 +431,7 @@
             this.SelectAnotherProductButton.TabIndex = 16;
             this.SelectAnotherProductButton.Text = "Select Another Product";
             this.SelectAnotherProductButton.UseVisualStyleBackColor = true;
+            this.SelectAnotherProductButton.Click += new System.EventHandler(this.SelectAnotherProductButton_Click);
             // 
             // CancelButton
             // 
@@ -423,6 +441,7 @@
             this.CancelButton.TabIndex = 17;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NextButton
             // 
@@ -432,12 +451,14 @@
             this.NextButton.TabIndex = 18;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 433);
+            this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SelectAnotherProductButton);
@@ -451,8 +472,10 @@
             this.Controls.Add(this.ProductIdTextBox);
             this.Controls.Add(this.ProductIdLabel);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ProductInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
