@@ -504,6 +504,7 @@
             this.OrderPictureBox.Location = new System.Drawing.Point(396, 35);
             this.OrderPictureBox.Name = "OrderPictureBox";
             this.OrderPictureBox.Size = new System.Drawing.Size(156, 159);
+            this.OrderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OrderPictureBox.TabIndex = 2;
             this.OrderPictureBox.TabStop = false;
             // 

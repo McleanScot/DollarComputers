@@ -41,39 +41,39 @@ namespace DollarComputers
 
             TotalTextBox.Text = total.ToString("C2");
 
-            if (ManufactuerTextBox.Text == "Asus")
+            if (ManufactuerTextBox.Text.Trim() == "Asus")
             {
                 OrderPictureBox.Image = Properties.Resources.asus_logo;
             }
-            else if (ManufactuerTextBox.Text == "Acer")
+            else if (ManufactuerTextBox.Text.Trim() == "Acer")
             {
                 OrderPictureBox.Image = Properties.Resources.acer;
             }
-            else if (ManufactuerTextBox.Text == "Apple")
+            else if (ManufactuerTextBox.Text.Trim() == "Apple")
             {
                 OrderPictureBox.Image = Properties.Resources.apple;
             }
-            else if (ManufactuerTextBox.Text == "Toshiba")
+            else if (ManufactuerTextBox.Text.Trim() == "Toshiba")
             {
                 OrderPictureBox.Image = Properties.Resources.toshiba;
             }
-            else if (ManufactuerTextBox.Text == "iBUYPOWER")
+            else if (ManufactuerTextBox.Text.Trim() == "iBUYPOWER")
             {
                 OrderPictureBox.Image = Properties.Resources.ibp;
             }
-            else if (ManufactuerTextBox.Text == "Lenovo")
+            else if (ManufactuerTextBox.Text.Trim() == "Lenovo")
             {
                 OrderPictureBox.Image = Properties.Resources.lenovo;
             }
-            else if (ManufactuerTextBox.Text == "HP")
+            else if (ManufactuerTextBox.Text.Trim() == "HP")
             {
                 OrderPictureBox.Image = Properties.Resources.hp;
             }
-            else if (ManufactuerTextBox.Text == "CybertronPC")
+            else if (ManufactuerTextBox.Text.Trim() == "CybertronPC")
             {
                 OrderPictureBox.Image = Properties.Resources.cybetron;
             }
-            else if (ManufactuerTextBox.Text == "Gateway")
+            else if (ManufactuerTextBox.Text.Trim() == "Gateway")
             {
                 OrderPictureBox.Image = Properties.Resources.gateway;
             }
@@ -86,7 +86,8 @@ namespace DollarComputers
 
         private void FinishButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("thanks for buying a computer ty!");
+            Application.Exit();
         }
     }
 }
